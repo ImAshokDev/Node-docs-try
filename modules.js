@@ -8,7 +8,7 @@ http
     res.writeHead(200, { 'Content-Type': 'text/html' });
     res.write(
       'Current Data and Time using khristModule: ' +
-        khristModule.KhristDateTime()
+        khristModule.khristDateTime()
     );
     res.end();
   })
