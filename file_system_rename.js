@@ -9,5 +9,5 @@ fs.writeFile('khrist.txt', 'Hello khrist', function(err) {
 // renamethe above created file
 fs.rename('khrist.txt', 'yohanRename.txt', function(err) {
   if (err) throw err;
-  console.log('Deleted the file created above');
+  console.log('Renamed the file created above');
 });
