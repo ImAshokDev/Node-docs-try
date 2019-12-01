@@ -47,6 +47,8 @@
 ##### Order - NodeJS MySQL
 
 [Installing Mysql and creating database from terminal](./installing_mysql_dbcreate_terminal.js)
+Installation Video Link:
+[How to Install MySQL server on Ubuntu 18.04/19.04](https://youtu.be/yRDVDMHoWLA)
 
 [Creating connection](./mysql_create_connection.js)
 
