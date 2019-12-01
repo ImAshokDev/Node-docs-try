@@ -3,14 +3,17 @@ var mysql = require('mysql');
 var connection = mysql.createConnection({
   host: 'localhost',
   user: 'khristyohan',
-  password: 'rootmysql'
+  password: 'rootmysql',
+  database: 'khristdb'
 });
 
 connection.connect(function(err) {
   if (err) throw err;
   console.log('Connected to the database');
-  connection.query('CREATE DATABASE khristdb', function(err, result) {
+
+  var sql = 'CREATE TABLE customers (name VARCHAR(255), address VARCHAR(255))';
+  connection.query(sql, function(err, result) {
     if (err) throw err;
-    console.log('Database Created');
+    console.log('Table Created');
   });
 });
