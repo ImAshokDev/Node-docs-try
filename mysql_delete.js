@@ -10,9 +10,9 @@ var connection = mysql.createConnection({
 connection.connect(function(err) {
   if (err) throw err;
   console.log('Connected to the database!');
-  var sql = 'SELECT * FROM developer ORDER BY name DESC';
+  var sql = "DELETE FROM developer WHERE designation = 'CTO'";
   connection.query(sql, function(err, result) {
     if (err) throw err;
-    console.log(result);
+    console.log('Number of records deleted: ' + result.affectedRows);
   });
 });
